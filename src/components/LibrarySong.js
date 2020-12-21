@@ -1,9 +1,16 @@
 import React from "react";
 
-const LibrarySong = ({ song, songs, setCurrentSong, currentSong, id }) => {
+const LibrarySong = ({
+  song,
+  songs,
+  setSongs,
+  setCurrentSong,
+  currentSong,
+  id,
+}) => {
   const songSelectHandler = () => {
     setCurrentSong(song);
-    const newSongs = song.map((song) => {
+    const newSongs = songs.map((song) => {
       if (song.id === id) {
         return {
           ...song,
@@ -16,6 +23,7 @@ const LibrarySong = ({ song, songs, setCurrentSong, currentSong, id }) => {
         };
       }
     });
+    setSongs(newSongs);
   };
   return (
     <div
