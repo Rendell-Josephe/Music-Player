@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
   faAngleLeft,
